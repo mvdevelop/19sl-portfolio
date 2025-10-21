@@ -1,15 +1,21 @@
 
+/** @type {import('tailwindcss').Config} */
+
+import scrollbar from 'tailwind-scrollbar';
+
 export default {
-    content: [
-        "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}",
-    ],
-    theme: {
-        extend: {
-            fontFamily: {
-                'sans': ['Inter', 'sans-serif']
-            }
-        },
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
     },
-    plugins: [],
-}
+  },
+  plugins: [
+    scrollbar({ nocompatible: true }),
+  ],
+};
