@@ -15,7 +15,7 @@ export default function Navbar({ navOpen }) {
         { label: 'Contact', link: '#contact', className: 'nav-link md:hidden' }
     ];
 
-  return (
+    return (
     <>
         <nav className={'navbar' + navOpen ? 'active' : ''}>
             {navItems.map(({ label, link, className, ref }, key) => (
@@ -26,7 +26,7 @@ export default function Navbar({ navOpen }) {
             <div className='active-box' ref={activeBox}></div>
         </nav>
     </>
-  )
+    )
 }
 
 Navbar.propTypes = {
